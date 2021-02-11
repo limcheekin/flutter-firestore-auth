@@ -1,0 +1,73 @@
+name: flutter_firestore_auth
+description: A new Flutter project.
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.0
+  firebase_core: ^0.7.0
+  firebase_auth: ^0.20.0+1
+  cloud_firestore: ^0.16.0
+  google_sign_in: ^4.5.9
+  rxdart: ^0.25.0
+  flutter_facebook_login: ^3.0.0
+  shared_preferences: ^0.5.12+4
+  http: ^0.12.2
+  flutter_twitter_login: ^1.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - lib/assets/imgs/centerLogo.png
+    - lib/assets/imgs/curve.png
+    - lib/assets/imgs/img.png
+
+    - lib/assets/bgs/bg-gradient.png
+    - lib/assets/bgs/bg-signup.png
+
+    - lib/assets/icons/lock.png
+    - lib/assets/icons/not-show.png
+    - lib/assets/icons/show.png
+    - lib/assets/icons/user.png
+    - lib/assets/icons/lock-grey.png
+    - lib/assets/icons/show-grey.png
+    - lib/assets/icons/user-grey.png
+    - lib/assets/icons/facebook.png
+    - lib/assets/icons/google-plus.png
+    - lib/assets/icons/twitter.png
+
+    - lib/assets/gif/load.gif
+
+  fonts:
+    - family: SfProTextSemibold
+      fonts:
+        - asset: lib/assets/fonts/SfProTextSemibold.ttf
+          weight: 400
+
+    - family: SfProTextRegular
+      fonts:
+        - asset: lib/assets/fonts/SfProTextRegular.ttf
+          weight: 400
+
+    - family: AcuminProBold
+      fonts:
+        - asset: lib/assets/fonts/AcuminProBold.otf
+          weight: 400
+
+    - family: AcuminProRegular
+      fonts:
+        - asset: lib/assets/fonts/AcuminProRegular.otf
+          weight: 400
