@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'styles/styles.dart';
+
 import 'screens/home/first-screen.dart';
+import 'styles/styles.dart';
 
 void main() async {
   runApp(new MyApp());

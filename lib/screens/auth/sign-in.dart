@@ -15,13 +15,6 @@ import '../home/home.dart';
 import 'forgot-password.dart';
 import 'sign-up.dart';
 
-GoogleSignIn _googleSignIn = GoogleSignIn(
-  scopes: [
-    'email',
-    'https://www.googleapis.com/auth/contacts.readonly',
-  ],
-);
-
 class SignIn extends StatefulWidget {
   @override
   _SignInState createState() => _SignInState();
@@ -273,7 +266,7 @@ class _SignInState extends State<SignIn> {
   final FirebaseAuth auth = FirebaseAuth.instance;
   final GoogleSignIn googleSignIn = GoogleSignIn();
 
-  Future<String> signInWithGoogle() async {
+  Future<void> signInWithGoogle() async {
     try {
       final GoogleSignInAccount googleSignInAccount =
           await googleSignIn.signIn();

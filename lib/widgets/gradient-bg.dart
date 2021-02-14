@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import '../styles/styles.dart';
 
 class GradientBg extends StatefulWidget {

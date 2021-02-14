@@ -79,7 +79,7 @@ class _SignUpState extends State<SignUp> {
       form.save();
       print('email name $email  $password');
 //      await LoginService.registerUser(email, password, name).then((onValue) {
-      User user = await auth
+      await auth
           .createUserWithEmailAndPassword(email: email, password: password)
           .then((userNew) {
         print('onvalue $userNew');

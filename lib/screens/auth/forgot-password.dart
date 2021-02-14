@@ -14,7 +14,6 @@ class ForgotPassword extends StatefulWidget {
 
 class _ForgotPasswordState extends State<ForgotPassword> {
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
-  final TextEditingController _passwordTextController = TextEditingController();
 
   FocusNode _focusNode;
 
@@ -58,7 +57,7 @@ class _ForgotPasswordState extends State<ForgotPassword> {
       });
       if (email.isNotEmpty) {
         try {
-          User user = await auth
+          await auth
               .sendPasswordResetEmail(
             email: email,
           )
