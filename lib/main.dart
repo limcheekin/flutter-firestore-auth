@@ -2,9 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import 'screens/home/first-screen.dart';
+import 'services/firebase_service.dart';
 import 'styles/styles.dart';
 
 void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  initFirebaseApp();
   runApp(new MyApp());
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
     systemNavigationBarColor: Colors.white,
