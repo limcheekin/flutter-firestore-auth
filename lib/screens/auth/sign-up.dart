@@ -1,8 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-
-import '../../services/firestoreService.dart';
 import '../../styles/styles.dart';
 import '../../widgets/gradient-bg.dart';
 import '../../widgets/round-buttons.dart';
@@ -63,7 +61,7 @@ class _SignUpState extends State<SignUp> {
   FirebaseFirestore store;
 
   callFireStore() async {
-    store = await fireStoreCommonService();
+    store = FirebaseFirestore.instance;
   }
 
   CollectionReference get users => store.collection('users');
